@@ -1,5 +1,6 @@
 package kr.ac.wku.activity_20231029
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -13,6 +14,14 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_second)
 
+        binding.btnReturn.setOnClickListener {
+
+//            현재 화면 종료 : 밑에 깔린 이전화면이 드러남
+            finish()
+
+
+
+        }
 
     }
 }
