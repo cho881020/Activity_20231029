@@ -30,5 +30,14 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+        binding.btnMoveToThird.setOnClickListener {
+
+            val myIntent = Intent( this, ThirdActivity::class.java )
+            startActivity(myIntent)
+
+        }
+
+
     }
 }
